@@ -1,10 +1,13 @@
 /* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -16,6 +19,7 @@ h1 {
 .container {
   width: 100%;
   padding: 0 15px;
+  overflow: hidden;
 }
 
 .section {
@@ -23,14 +27,14 @@ h1 {
   padding: 15px;
   margin: 15px 0;
   position: relative;
-  background-color: #f0f0f0; /* Adjust background color as desired */
+  background-color: #f0f0f0;
 }
 
 .section-title {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #ccc; /* Adjust background color as desired */
+  background-color: #ccc;
   border: 1px solid black;
   padding: 5px 10px;
   font-size: 1.25em;

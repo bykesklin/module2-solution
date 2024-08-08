@@ -27,45 +27,35 @@ h1 {
   padding: 15px;
   margin: 15px 0;
   position: relative;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Adjust background color as desired */
+  float: left;
+  width: calc(33.333% - 30px); /* Adjust width to account for padding and margin */
 }
 
 .section-title {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #ccc;
+  background-color: #ccc; /* Adjust background color as desired */
   border: 1px solid black;
   padding: 5px 10px;
   font-size: 1.25em;
 }
 
-/* Desktop Styles */
-@media (min-width: 992px) {
-  .section {
-    float: left;
-    width: 32%;
-    margin: 15px 1%;
-  }
-}
-
 /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 991px) {
   .section {
-    width: 48%;
-    margin: 15px 1%;
+    width: calc(50% - 30px);
   }
 
   #section3 {
-    width: 98%;
-    margin: 15px 1%;
+    width: calc(100% - 30px);
   }
 }
 
 /* Mobile Styles */
 @media (max-width: 767px) {
   .section {
-    width: 98%;
-    margin: 15px 1%;
+    width: calc(100% - 30px);
   }
 }
